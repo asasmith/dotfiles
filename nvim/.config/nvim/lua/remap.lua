@@ -15,8 +15,3 @@ vim.keymap.set("x", "<leader>p", "\"_dp")
 vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>y", "\"+y")
-
--- move to bottom buffer
-vim.keymap.set("n", "<leader>j", "<C-W><C-J>")
--- move to top buffer
-vim.keymap.set("n", "<leader>k", "<C-W><C-K>")
