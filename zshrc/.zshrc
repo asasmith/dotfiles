@@ -77,7 +77,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew git github node npx nvm ruby vscode golang zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(brew git github node nvm ruby vscode golang zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,6 +106,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export PATH=$PATH:~/.local/bin
+
+bindkey -s ^f "tmux-sessionizer\n"
 
 alias vim="nvim"
 
@@ -141,3 +145,4 @@ eval "$(rbenv init - zsh)"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 alias ls='colorls'
+

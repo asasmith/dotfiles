@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+session=$(find ~ ~/learn ~/learn/comp-sci ~/learn/go ~/learn/java -mindepth 1 -maxdepth 1 -type d | fzf)
+
+session_name=$(basename "$session" | tr . _)
+tmux_running=$(pgrep tmux)
+
+if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
+    echo "session: $session"
+    echo "session_name: $session_name"
+    tmux new-session -s $session_name -c $session
+    exit 0
+fi
+
+if ! tmux has-session -t "$session_name" 2> /dev/null; then
+    tmux new-session -s "$session_name" -c "$session" -d 
+fi
+
+tmux switch-client -t "$session_name"
