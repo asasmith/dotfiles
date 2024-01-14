@@ -16,7 +16,7 @@ vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>y", "\"+y")
 
--- when run in vim should change the current file to an executable
+-- when run in vim should change the current file to and executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x % <CR>")
 
 -- run tmux-sessionizer

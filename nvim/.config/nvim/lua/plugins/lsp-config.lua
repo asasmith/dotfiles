@@ -28,11 +28,15 @@ return {
                 capabilites = capabilities,
             })
 
+            lspconfig.tailwindcss.setup({
+                capabilites = capabilities,
+            })
+
             lspconfig.lua_ls.setup({
                 capabilites = capabilities,
             })
 
-            lspconfig.go_pls.setup({
+            lspconfig.gopls.setup({
                 capabilites = capabilities,
             })
 
