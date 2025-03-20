@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-session=$(find ~ ~/learn ~/learn/comp-sci ~/learn/go ~/learn/java ~/Documents ~/projects ~/adtech-cicd ~/adtech-cicd/forks -mindepth 1 -maxdepth 1 -type d | fzf)
+session=$(find ~ ~/charmCityJs ~/learn/* ~/learn/*/* ~/Documents ~/projects ~/open-source  ~/talks -mindepth 1 -maxdepth 1 -type d | fzf)
 
 session_name=$(basename "$session" | tr . _)
 tmux_running=$(pgrep tmux)
