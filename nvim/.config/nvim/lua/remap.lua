@@ -21,3 +21,15 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x % <CR>")
 
 -- run tmux-sessionizer
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+
+-- last file
+vim.keymap.set("n", "<leader><leader>", "<C-^>")
+
+-- trouble toggle
+-- vim.keymap.set("n", "<leader>tt", "<cmd>Trouble diagnostics toggle<CR>")
+
+-- :GoRun %
+vim.keymap.set("n", "<leader>gr", "<cmd>silent :GoRun % <CR>")
+
+-- :FloatTermNew
+vim.keymap.set("n", "<leader>fl", "<cmd>silent :FloatermNew <CR>")
