@@ -156,3 +156,6 @@ export PATH="$PNPM_HOME:$PATH"
 
 # flutter
 export PATH=$HOME/development/flutter/bin:$PATH
+
+# opencode
+export PATH=/Users/asasmith/.opencode/bin:$PATH
